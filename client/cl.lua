@@ -38,8 +38,8 @@ Citizen.CreateThread(function()
     end
 end)
 
-AddEventHandler('onResourceStop', function(resourceName)
-    if GetCurrentResourceName() == resourceName then
+AddEventHandler('onResourceStop', function(rsname)
+    if GetCurrentResourceName() == rsname then
         for _, prop in ipairs(spawnedbenches) do
             if DoesEntityExist(prop) then
                 DeleteEntity(prop)
