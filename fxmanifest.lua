@@ -1,4 +1,4 @@
-shared_script '@WaveShield/resource/include.lua'
+--shared_script '@WaveShield/resource/include.lua'
 
 fx_version 'cerulean'
 game 'gta5'
@@ -9,8 +9,8 @@ shared_scripts {
     'shared/*.lua'
 }
 client_scripts {
-    'loader.lua'
+    'client/*.lua'
 }
 server_scripts {
-    'sv_loader.lua'
+    'server/*.lua'
 }
